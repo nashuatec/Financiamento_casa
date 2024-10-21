@@ -1,0 +1,19 @@
+#calculo para comrpa da casa
+valor= float(input("digite o valor da casa: "))
+salario = float(input("digite o valor do salario: "))
+anos= float(input("digite a quantidade anos a pagar: "))
+trintapor= salario * 0.3
+anosmeses = (anos *12)
+prestacao = valor / anosmeses5
+if prestacao > trintapor:
+    print("FINANCIAMENTO NAO AUTORIZADO")
+    print(f"salario = {salario}")
+    print(f"Quantidade de meses {anosmeses}")
+    print(f"valor da prestacao {prestacao}")
+    print(f"O valor da prestacao excede 30 % do salario que eh {trintapor}")
+else: 
+    print(f"FINANCIAMENTO APROVADO") 
+    print(f"salario = {salario}")
+    print(f"Quantidade de meses {anosmeses}")
+    print(f"valor da prestacao {prestacao}")
+    print(f"O valor da prestacao EH INFERIOR A 30% do salario que eh {trintapor}")
