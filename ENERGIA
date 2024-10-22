@@ -1,0 +1,28 @@
+#programa para calculo da energia
+kWH = float(input("digite a Quantidade de Kwh:"))
+insta = (input("DIGITE O TIPO  de Instalacao \n R para REsidencial \n C para comercial \n I para industrial \n\n ..."))
+
+
+Residencial500 = 0.40
+Residencialm500 = 0.65
+comercial1000 = 0.55
+comercialm1000 = 0.60
+industrial5000 = 0.555
+industrialm5000=0.60
+if insta == "R":
+    if kWH<500:
+        print(f" o valor da fatura eh R${kWH *Residencial500} reais")
+    else:
+        print(f"o valor da fautra eh R$ {kWH* Residencialm500}reais")
+elif insta == "C":
+    if kWH<1000:
+        print(f"o valor da fatura eh R$ {kWH *comercial1000} reais")
+    else:
+        print(f"o valor da fatura eh R$ {kWH * comercialm1000} reais")
+elif insta== "I":
+    if kWH<1000:
+        print(f"o valor da fatura eh R$ {kWH * industrial5000} reais")
+    else: 
+        print(f"o valor da fatura eh R$ {kWH * industrialm5000} reais")
+else:
+    print("TIPO DE INSTALACAO DESCONHECIDA use; R maiusculo para residencial ,C maiusculo para Comercial e I maiusculo para Industrial")    
